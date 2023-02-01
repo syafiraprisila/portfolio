@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Poppins:wght@300;500&family=Quicksand:wght@400;600&family=Unbounded:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+}
+
+.header{
+	background-image: url('r.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	height: 100vh;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-h1{
+	margin-top: 300px;
+	text-align: center;
+}
+.join{
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	flex-direction: column;
+}
+.header button{
+	border-radius: 160px 10px 160px 10px;
+	width: 150px;
+	padding: 10px;
+	background: rgba(0, 0, 0, .4);
+	border: solid 2px white;
+	color: white;
+	margin-top: 20px;
+}
+
+
+/*ABOUT*/
+.h2{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about img{
+	height: 250px;
+	width: 350px;
+  border-radius: 10px;
+}
+
+.box-about{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+}
+
+.judul{
+  width: 450px;
+}
+
+h5{
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+/*TESTIMONI*/
+.h2-testimoni{
+	text-align: center;
+	margin: 50px 0;
+}
+.box-testimoni{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.kotak{
+	display: flex;
+	margin: 1px;
+	width: 300px;
+	height: 300px;
+	background: darkgrey;
+	border-radius: 10px;
+	margin: 0 10px;
+	flex-direction: column;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow: auto;
+}
+.box-testimoni img{
+	height: 100px;
+	align-self: center;
+	border-radius: 100%;
+	justify-content: center;
+}
+
+.kotak p{
+	font-size: 13px;
+}
+
+p{
+	text-align: center;
+}
+
+
+
+/*CONTACT*/
+.h1-contact{
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	margin: 50px 0;
+
+}
+
+.hua{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-direction: column;
+	position: relative;
+}
+.hua input{
+	width: 250px;
+}
+.iya{
+	position: relative;	
+	height: 150px;
+}
+
+::placeholder{
+	font-family: consolas;
+}
+
+input[id="message"]::placeholder {
+    text-align: left;
+    position: absolute;
+}
+
+
+.hua button{
+	width: 70px;
+	text-align: center;
+	background-color: blue;
+	color: white;
+	margin-left: 175px;
+	padding: 10px;
+	border: none;
+	font-weight: bolder;
+	border-radius: 9px;
+}
+
+@media screen and (max-width:  850px){
+	.box-about{
+		flex-direction: column;
+		padding: 10px;
+	}
+
+	.judul{
+		gap: 20px;
+	}
+
+	.kotak{
+		gap:  10px;
+		padding: 10px;
+		box-sizing: border-box;
+		width: 90%;
+		color: white;
+	}
+
+
+	.kotak p{
+		font-size: 20px;
+	}
+	.box-testimoni {
+		flex-direction: column;
+		gap:  20px;
+	}
+}
